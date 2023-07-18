@@ -6,6 +6,8 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
 import styles from "@/utils/styles";
+import { motion } from "framer-motion";
+
 type Props = {
   toggle: boolean;
   setToggle: (value: boolean) => void;
@@ -13,11 +15,38 @@ type Props = {
 
 export default function Navbar({ setToggle, toggle }: Props) {
   return (
-    <div className=" sm:w-[90%] h-[32px] flex-shrink-0 flex py-10 justify-between items-center navbar sm:px-10 px-4 z-10">
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 2,
+        type: "tween",
+      }}
+      className=" sm:w-[90%] h-[32px] flex-shrink-0 flex py-10 justify-between items-center navbar sm:px-10 px-4 z-10"
+    >
       <div>
-        <img src="/chapa1.png" alt="chapa logo" className="h-14 w-14" />
+        <motion.img
+          initial={{
+            x: -100,
+            opacity: 0,
+          }}
+          animate={{
+            x: 0,
+            opacity: 1,
+          }}
+          transition={{
+            duration: 2,
+          }}
+          src="/chapa1.png"
+          alt="chapa logo"
+          className="h-14 w-14"
+        />
       </div>
-      <ul className="  list-none sm:flex hidden justify-end items-center flex-1 gap-5 font-poppins">
+      <ul className="  list-none sm:flex hidden justify-end items-center flex-1 gap-5 font-poppins z-[200]">
         {navLinks.map((item, i) => (
           <li
             key={i}
@@ -64,6 +93,6 @@ export default function Navbar({ setToggle, toggle }: Props) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
