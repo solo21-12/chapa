@@ -6,7 +6,7 @@ type Props = {};
 export default function GetStarted({}: Props) {
   return (
     <div
-      className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-gradient-to-r from-green-600 to-emerald-400 p-[2px] cursor-pointer`}
+      className={`${styles.flexCenter} md:w-[140px] h-[140px] rounded-full bg-gradient-to-r from-green-600 to-emerald-400 p-[2px] cursor-pointer`}
       onClick={()=>alert("hi")}
     >
       <div
