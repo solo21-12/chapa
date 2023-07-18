@@ -26,7 +26,8 @@ module.exports = {
         White: "#e6f1ff",
         Green: "#64ffda",
         chapa:"#7DC242",
-        chapGray:'(255, 255, 255, 0.60)'
+        chapGray:'(255, 255, 255, 0.60)',
+        test:'radial-gradient(64.33% 64.33% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%);'
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
