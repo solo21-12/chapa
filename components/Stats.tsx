@@ -24,7 +24,7 @@ const list: List[] = [
 export default function Stats({}: Props) {
   return (
     <div>
-      <div className=" ss:mt-[100px] md:mt-0 flex w-[100%] px-5 md:w-[80%] mx-auto justify-between">
+      <div className=" ss:mt-[100px] md:mt-0 flex w-[100%] px-5 md:w-[90%] mx-auto justify-between">
         {list.map((item, i) => (
           <div
             key={i}

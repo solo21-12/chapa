@@ -4,6 +4,6 @@ type Props = {}
 
 export default function Billing({}: Props) {
   return (
-    <div>Billing</div>
+    <div className=' h-screen'>Billing</div>
   )
 }
