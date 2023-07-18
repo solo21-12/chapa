@@ -9,7 +9,7 @@ type Props = {};
 export default function Hero({}: Props) {
   return (
     <div
-      className={`flex md:flex-row flex-col md:justify-between ${styles.paddingY} md:w-[90%] mx-auto h-screen md:px-12 px-10 z-50`}
+      className={`flex md:flex-row flex-col md:justify-between ${styles.paddingY} md:w-[90%] mx-auto h-screen md:px-12 px-10`}
     >
       <div className={` flex-col xl:px-0 lg:px-16 ${styles.flexStart} `}>
         <div className=" flex flex-row items-center py-[2px] lg:py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-4 md:w-[388px]">
@@ -64,10 +64,6 @@ export default function Hero({}: Props) {
         {/* <div className=" absolute z-0 w-[40%] h-[35%] top-0 pink__gradient "></div> */}
         <div className=" absolute z-[1] w-[10%] h-[80%] rounded-full bottom-40 white__gradient "></div>
         <div className=" absolute z-0 w-[50%] h-[50%] right-20 bottom-20 blue__gradient "></div>
-      </div>
-
-      <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted />
       </div>
     </div>
   );

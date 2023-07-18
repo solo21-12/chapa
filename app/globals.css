@@ -210,7 +210,6 @@
 
 .app__navbar-smallscreen-links li {
   cursor: pointer;
-  color: var(--color-golden);
   text-align: center;
 }
 

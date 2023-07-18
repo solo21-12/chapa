@@ -5,6 +5,7 @@ import React from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
+import styles from "@/utils/styles";
 type Props = {
   toggle: boolean;
   setToggle: (value: boolean) => void;
@@ -27,32 +28,34 @@ export default function Navbar({ setToggle, toggle }: Props) {
         ))}
       </ul>
 
-      <div className=" sm:hidden flex flex-1 justify-end text-3xl text-green-400">
+      <div className={` sm:hidden flex flex-1 justify-end text-3xl  `}>
         <div className="app__navbar-smallscreen">
-          <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
+          <div className="app__navbar-smallscreen_overlay flex__center slide-bottom text-green-400">
             {!toggle ? (
               <BiMenuAltRight
                 fontSize={27}
-                className="overlay__close text-green-400 text-4xl"
+                className="overlay__close  text-4xl"
                 onClick={() => setToggle(!toggle)}
               />
             ) : (
               <AiOutlineClose
                 fontSize={27}
-                className="overlay__close text-4xl z-50 "
+                className="overlay__close text-4xl z-50 text-green-400 "
                 onClick={() => setToggle(!toggle)}
               />
             )}
 
             <ul
-              className={`app__navbar-smallscreen-links align-middle items-center justify-center gap-5  flex-col h-screen font-poppins sidebar ${
-                toggle ? "flex" : "hidden"
+              className={` ${
+                toggle
+                  ? "flex app__navbar-smallscreen-links align-middle items-center justify-center gap-5  flex-col h-screen font-poppins sidebar"
+                  : "hidden"
               }`}
             >
               {navLinks.map((item, i) => (
                 <li
                   key={i}
-                  className={`font-poppins cursor-pointer hover:text-slate-100  font-[500]  leading-[130%] text-2xl`}
+                  className={`font-poppins cursor-pointer hover:text-slate-100  font-[500]  leading-[130%] text-2xl ${styles.GreenGradientText}`}
                 >
                   <Link href={`#${item.id}`}>{item.title}</Link>
                 </li>
