@@ -92,7 +92,7 @@ export default function Hero({}: Props) {
       <div className="md:hidden">
         <GetStartedRectangular />
       </div>
-      <div className=" mt-20 w-full md:w-[40%] flex-shrink-0 ">
+      <div className=" mt-2 w-full md:w-[40%] flex-shrink-0 ">
         <Image
           src="/hero2.png"
           alt="hero"
