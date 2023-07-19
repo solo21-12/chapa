@@ -39,7 +39,11 @@ export default function Home() {
         <div className=" snap-center">
           <Section children={<CardDeal />} id="carddeal" />
         </div>
-        {/* <Section children={<Testimonials />} id="testimoal" /> */}
+        <div className=" snap-center">
+
+        <Section children={<Testimonials />} id="testimoal" />
+        </div>
+
         {/* <Section children={<Clients />} id="clients" /> */}
         {/* <Section children={<CTA />} id="cts" /> */}
         {/* <Section children={<Footer />} id="footer" /> */}
