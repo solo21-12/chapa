@@ -26,16 +26,16 @@ export default function Home() {
       />
       <div className={`${toggle ? "hidden" : " block"}`}>
         <Section children={<Hero />} id="hero" />
-        <div className=" h-screen">
+        <div className=" h-screen align-middle  justify-center flex-col flex px-5">
           <Section children={<Stats />} id="stats" />
           <Section children={<Business />} id="busines" />
         </div>
         <Section children={<Billing />} id="billing" />
-        <Section children={<CardDeal />} id="carddeal" />
-        <Section children={<Testimonials />} id="testimoal" />
-        <Section children={<Clients />} id="clients" />
-        <Section children={<CTA />} id="cts" />
-        <Section children={<Footer />} id="footer" />
+        {/* <Section children={<CardDeal />} id="carddeal" /> */}
+        {/* <Section children={<Testimonials />} id="testimoal" /> */}
+        {/* <Section children={<Clients />} id="clients" /> */}
+        {/* <Section children={<CTA />} id="cts" /> */}
+        {/* <Section children={<Footer />} id="footer" /> */}
       </div>
     </main>
   );

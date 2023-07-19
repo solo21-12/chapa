@@ -3,6 +3,8 @@ import GetStartedCircular from "./button/GetStartedCircular";
 import { AiFillStar } from "react-icons/ai";
 import { BsShieldFillCheck, BsFillSendFill } from "react-icons/bs";
 import BusinessCard from "./card/businessCard";
+import H1 from "./typography/H1";
+import P from "./typography/P";
 type Props = {};
 const list = [
   {
@@ -26,19 +28,15 @@ const list = [
 ];
 export default function Business({}: Props) {
   return (
-    <div className=" flex md:flex-row flex-col px-2 w-[90%] mx-auto mt-20 justify-between">
+    <div className=" flex md:flex-row flex-col px-2 w-[90%] s:w-[70%] md:w-[90%] mx-auto mt-20 justify-between">
       <div className=" md:w-[48%] flex flex-col gap-3">
-        <h1 className=" font-poppins text-[28px] ss:text-[43px] md:text-[48px] font-semibold leading-[40px] md:leading-[70px]">
-          You do the business, <br />
-          we’ll handle the money.
-        </h1>
-        <p className=" font-poppins text-LightestSlate text-[14px] md:text-[18px] font-normal leading-[30px] max-w-[570px]">
-          With the right credit card, you can improve your financial life by
+        <H1 title1="You do the business," title2="we’ll handle the money " />
+        <P
+          title=" With the right credit card, you can improve your financial life by
           building credit, earning rewards and saving money. But with hundreds
-          of credit cards on the market.
-        </p>
+          of credit cards on the market."
+        />
         <GetStartedCircular />
-        
       </div>
       <div className=" md:w-[48%] mt-3 md:mt-0 flex flex-col gap-5 justify-between">
         {list.map((item, i) => (
