@@ -28,7 +28,7 @@ const list = [
 ];
 export default function Business({}: Props) {
   return (
-    <div className=" flex md:flex-row flex-col px-2 w-[90%] s:w-[70%] md:w-[90%] mx-auto mt-20 justify-between">
+    <div className=" flex md:flex-row flex-col px-2 w-[90%] s:w-[70%] md:w-[90%] mx-auto mt-2 justify-between">
       <div className=" md:w-[48%] flex flex-col gap-3">
         <H1 title1="You do the business," title2="we’ll handle the money " />
         <P

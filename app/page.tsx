@@ -19,19 +19,26 @@ export default function Home() {
   const [toggle, setToggle] = useState<boolean>(false);
 
   return (
-    <main className=" bg-primary w-full overflow-hidden min-h-screen text-white">
+    <main className=" bg-primary w-full overflow-hidden h-screen text-White snap-y snap-mandatory overflow-y-scroll">
       <Section
         children={<Navbar toggle={toggle} setToggle={setToggle} />}
         id="navbar"
       />
       <div className={`${toggle ? "hidden" : " block"}`}>
-        <Section children={<Hero />} id="hero" />
-        <div className=" h-screen align-middle  justify-center flex-col flex px-5">
+        <div className=" snap-center">
+          <Section children={<Hero />} id="hero" />
+        </div>
+        <div className=" h-screen align-middle  justify-center flex-col flex px-5 snap-center">
           <Section children={<Stats />} id="stats" />
           <Section children={<Business />} id="busines" />
         </div>
-        <Section children={<Billing />} id="billing" />
-        <Section children={<CardDeal />} id="carddeal" />
+        <div className=" snap-center">
+          <Section children={<Billing />} id="billing" />
+        </div>
+
+        <div className=" snap-center">
+          <Section children={<CardDeal />} id="carddeal" />
+        </div>
         {/* <Section children={<Testimonials />} id="testimoal" /> */}
         {/* <Section children={<Clients />} id="clients" /> */}
         {/* <Section children={<CTA />} id="cts" /> */}

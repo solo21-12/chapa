@@ -24,7 +24,7 @@ const list: List[] = [
 export default function Stats({}: Props) {
   return (
     <div>
-      <div className=" ss:mt-[100px] md:mt-0 flex w-[100%] px-5 md:w-[90%] mx-auto justify-between">
+      <div className=" ss:mt-[100px] md:mt-0 flex w-[100%] px-5 md:w-[90%] mx-auto justify-between mb-3">
         {list.map((item, i) => (
           <div
             key={i}
@@ -34,7 +34,7 @@ export default function Stats({}: Props) {
               <h4 className=" font-poppins text-[12px] xs:leading-[53px] leading-[30px]  md:text-[41px] font-[600] md:leading-7">
                 {item.title}
               </h4>
-              <p className=" font-poppins text-[10px] xs:text-[15px] md:text-[21px] font-[400] uppercase md:leading-9 bg-gradient-to-r from-teal-400 to-emerald-700 bg-clip-text text-transparent">
+              <p className=" font-poppins text-[8px] xs:text-[15px] md:text-[21px] font-[400] uppercase md:leading-9 bg-gradient-to-r from-teal-400 to-emerald-700 bg-clip-text text-transparent">
                 {item.subTitle}
               </p>
             </div>

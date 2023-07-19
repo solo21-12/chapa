@@ -21,7 +21,7 @@ export default function Hero({}: Props) {
         duration: 2,
         type: "tween",
       }}
-      className={`flex md:flex-row flex-col md:justify-between ${styles.paddingY} md:w-[90%] mx-auto h-[92vh] md:px-12 px-10 gap-5`}
+      className={`flex md:flex-row flex-col md:justify-between ${styles.paddingY} md:w-[90%] mx-auto h-[92vh] md:px-12 px-10 gap-5 mt-20`}
     >
       <div className={` flex-col xl:px-0 lg:px-16 ${styles.flexStart} `}>
         <motion.div

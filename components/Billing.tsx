@@ -23,7 +23,7 @@ export default function Billing({}: Props) {
   return (
     <div className=" h-screen flex md:flex-row flex-col justify-between px-10 md:w-[90%] xl:w-[80%] mx-auto items-center align-middle mb-10">
       <Images img={"/card1.png"} />
-      <div className=" md:w-[50%] flex flex-col gap-5">
+      <div className=" md:w-[50%] flex flex-col gap-5 mb-10 md:mb-0">
         <H1 title1={"Easily control your "} title2={"billing & invoicing."} />
         <P
           title={

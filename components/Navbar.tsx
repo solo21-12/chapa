@@ -15,7 +15,7 @@ type Props = {
 
 export default function Navbar({ setToggle, toggle }: Props) {
   return (
-    <>
+    <div className=" ">
       <motion.div
         initial={{
           opacity: 0,
@@ -27,7 +27,7 @@ export default function Navbar({ setToggle, toggle }: Props) {
           duration: 2,
           type: "tween",
         }}
-        className=" sm:w-[90%] h-[32px] flex-shrink-0 flex py-10 justify-between items-center navbar sm:px-10 px-4 z-10"
+        className=" bg-primary fixed top-0 w-full sm:w-[90%] h-[32px] flex-shrink-0 flex py-10 justify-between items-center navbar sm:px-10 px-4 z-10"
       >
         <div>
           <motion.img
@@ -88,6 +88,6 @@ export default function Navbar({ setToggle, toggle }: Props) {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
