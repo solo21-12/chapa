@@ -31,7 +31,7 @@ export default function Home() {
           <Section children={<Business />} id="busines" />
         </div>
         <Section children={<Billing />} id="billing" />
-        {/* <Section children={<CardDeal />} id="carddeal" /> */}
+        <Section children={<CardDeal />} id="carddeal" />
         {/* <Section children={<Testimonials />} id="testimoal" /> */}
         {/* <Section children={<Clients />} id="clients" /> */}
         {/* <Section children={<CTA />} id="cts" /> */}

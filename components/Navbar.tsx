@@ -26,7 +26,7 @@ export default function Navbar({ setToggle, toggle }: Props) {
         duration: 2,
         type: "tween",
       }}
-      className=" fixed top-0 sm:w-[90%] h-[32px] flex-shrink-0 flex py-10 justify-between items-center navbar sm:px-10 px-4 z-10"
+      className=" sm:w-[90%] h-[32px] flex-shrink-0 flex py-10 justify-between items-center navbar sm:px-10 px-4 z-10"
     >
       <div>
         <motion.img
