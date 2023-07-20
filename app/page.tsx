@@ -26,30 +26,16 @@ export default function Home() {
         id="navbar"
       />
       <div className={`${toggle ? "hidden" : " block"}`}>
-        <div className=" snap-center">
-          <Section children={<Hero />} id="hero" />
-        </div>
-        <div className=" h-screen align-middle  justify-center flex-col flex px-5 snap-center">
-          <Section children={<Stats />} id="stats" />
-          <Section children={<Business />} id="busines" />
-        </div>
-        <div className=" snap-center">
-          <Section children={<Billing />} id="billing" />
-        </div>
-
-        <div className=" snap-center">
-          <Section children={<CardDeal />} id="carddeal" />
-        </div>
-        <div className=" h-screen align-middle  justify-center flex-col flex snap-center">
-          <Section children={<Testimonials />} id="testimoal" />
-        </div>
-        <div className=" h-screen align-middle  justify-center flex-col flex px-5 snap-center">
-          <Section children={<Clients />} id="clients" />
-          <Section children={<CTA />} id="cts" />
-          {/* <Section children={<Editor />} id="editor" /> */}
-        </div>
-
-        {/* <Section children={<Footer />} id="footer" /> */}
+        <Section children={<Hero />} id="hero" />
+        <Section children={<Stats />} id="stats" />
+        <Section children={<Business />} id="busines" />
+        <Section children={<Billing />} id="billing" />
+        <Section children={<CardDeal />} id="carddeal" />
+        <Section children={<Testimonials />} id="testimoal" />
+        <Section children={<Clients />} id="clients" />
+        <Section children={<CTA />} id="cts" />
+        <Section children={<Footer />} id="footer" />
+        
       </div>
     </main>
   );
