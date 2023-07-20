@@ -12,7 +12,7 @@ type Props = {
 
 export default function Testimonal({ user }: Props) {
   return (
-    <div className=" bg-discount-gradient h-[395px] w-[80vw] ss:w-[60vw] md:w-[370px] flex-grow-0 rounded-[20px]  flex flex-col justify-center gap-8 font-poppins flex-shrink-0 snap-center px-5 md:px-10">
+    <div className=" cursor-pointer hover:bg-Navy h-[325px] md:h-[395px] w-[80vw] ss:w-[60vw] md:w-[370px] flex-grow-0 rounded-[20px]  flex flex-col justify-center gap-8 font-poppins flex-shrink-0 snap-center px-5 md:px-10">
       <Image
         src={"/q.png"}
         width={42}

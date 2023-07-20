@@ -11,6 +11,7 @@ import {
   Footer,
   Stats,
   Testimonials,
+  Editor,
 } from "@/components";
 import { Section } from "@/containers";
 import { useState } from "react";
@@ -39,13 +40,15 @@ export default function Home() {
         <div className=" snap-center">
           <Section children={<CardDeal />} id="carddeal" />
         </div>
-        <div className=" snap-center">
-
-        <Section children={<Testimonials />} id="testimoal" />
+        <div className=" h-screen align-middle  justify-center flex-col flex snap-center">
+          <Section children={<Testimonials />} id="testimoal" />
+        </div>
+        <div className=" h-screen align-middle  justify-center flex-col flex px-5 snap-center">
+          <Section children={<Clients />} id="clients" />
+          <Section children={<CTA />} id="cts" />
+          {/* <Section children={<Editor />} id="editor" /> */}
         </div>
 
-        {/* <Section children={<Clients />} id="clients" /> */}
-        {/* <Section children={<CTA />} id="cts" /> */}
         {/* <Section children={<Footer />} id="footer" /> */}
       </div>
     </main>

@@ -44,6 +44,7 @@ export default function Business({}: Props) {
             icon={item.icon}
             title={item.title}
             subTitle={item.sunTitle}
+            key={i}
           />
         ))}
       </div>

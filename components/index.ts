@@ -10,6 +10,7 @@ import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 import GetStarted from "./button/GetStarted";
 import GetStartedRectangular from "./button/GetStartedRectangular";
+import Editor from "./Editor";
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   Hero,
   GetStarted,
   GetStartedRectangular,
+  Editor,
 };
