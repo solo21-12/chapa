@@ -25,7 +25,7 @@ export default function Home() {
         children={<Navbar toggle={toggle} setToggle={setToggle} />}
         id="navbar"
       />
-      <div className={`${toggle ? "hidden" : " block"}`}>
+      <div className={`${toggle ? "hidden" : " block px-2"}`}>
         <Section children={<Hero />} id="hero" />
         <Section children={<Stats />} id="stats" />
         <Section children={<Business />} id="busines" />

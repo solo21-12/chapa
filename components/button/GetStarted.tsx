@@ -7,7 +7,7 @@ type Props = {};
 export default function GetStarted({}: Props) {
   return (
     <div
-      className={`${styles.flexCenter} md:w-[140px] h-[140px] rounded-full bg-gradient-to-r from-green-600 to-emerald-400 p-[2px] cursor-pointer hover:scale-105 transition-all duration-500`}
+      className={`${styles.flexCenter} md:w-[140px] h-[140px] rounded-full bg-gradient-to-r from-green-600 to-emerald-400 p-[2px] cursor-pointer hover:scale-105 transition-all duration-500 mt-20`}
       onClick={() => alert("hi")}
     >
       <div

@@ -38,7 +38,7 @@ export default function Business({}: Props) {
         />
         <GetStartedCircular />
       </div>
-      <div className=" md:w-[48%] mt-3 md:mt-0 flex flex-col gap-5 justify-between">
+      <div className=" md:w-[48%] mt-3 md:mt-0 flex flex-col gap-5 justify-between mb-9">
         {list.map((item, i) => (
           <BusinessCard
             icon={item.icon}

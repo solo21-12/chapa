@@ -7,7 +7,7 @@ type Props = {};
 
 export default function CardDeal({}: Props) {
   return (
-    <div className=" h-screen flex  md:flex-row-reverse flex-col justify-between px-3 md:px-10 md:w-[90%] xl:w-[80%] mx-auto items-center align-middle mb-10">
+    <div className=" h-[50vh] flex  md:flex-row-reverse flex-col justify-between px-3 md:px-10 md:w-[90%] xl:w-[80%] mx-auto items-center align-middle mb-10">
       <Images img={"/card2.png"} />
       <div className=" md:w-[50%] flex flex-col gap-5 mb-10 md:mb-0">
         <H1 title1={"Find a better card deal "} title2={"in few easy steps."} />

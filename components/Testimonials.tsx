@@ -31,7 +31,7 @@ const list = [
 
 export default function Testimonials({}: Props) {
   return (
-    <div className="  flex flex-col px-5 md:w-[80%] mx-auto justify-center gap-10">
+    <div className="  h-screen flex flex-col px-5 md:w-[80%] mx-auto justify-center gap-10 pt-20">
       <div className=" flex xl:flex-row flex-col justify-between md:w-[80%] mx-auto align-middle">
         <H1 title1={"What people are "} title2={"saying about us"} />
         <P title="Everything you need to accept card payments and grow your business anywhere on the planet." />

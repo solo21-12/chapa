@@ -8,7 +8,7 @@ type Props = {
 
 export default function Section({ children, id }: Props) {
   return (
-    <section id={id} className={`${styles.flexStart} ${styles.paddingX}`}>
+    <section id={id} className={`${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>{children}</div>
     </section>
   );

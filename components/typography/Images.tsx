@@ -6,7 +6,7 @@ type Props = {
 
 export default function Images({ img }: Props) {
   return (
-    <div className=" mt-2 md:w-[50%] flex-1 flex-shrink-0 ">
+    <div className=" mt-2 md:w-[50%] flex-1 flex-shrink-0  mb-5">
       <Image
         src={img}
         alt="hero"
