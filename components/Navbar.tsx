@@ -7,7 +7,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
 import styles from "@/utils/styles";
 import { motion } from "framer-motion";
-
+import { logo } from "@/assets";
+import Image from "next/image";
 type Props = {
   toggle: boolean;
   setToggle: (value: boolean) => void;
@@ -30,21 +31,12 @@ export default function Navbar({ setToggle, toggle }: Props) {
         className=" bg-primary fixed top-0 w-full sm:w-[90%] h-[32px] flex-shrink-0 flex py-10 justify-between items-center navbar sm:px-10 px-5 z-10"
       >
         <div>
-          <motion.img
-            initial={{
-              x: -100,
-              opacity: 0,
-            }}
-            animate={{
-              x: 0,
-              opacity: 1,
-            }}
-            transition={{
-              duration: 2,
-            }}
-            src="/chapa1.png"
+          <Image
+            width={100}
+            height={100}
+            src={logo}
             alt="chapa logo"
-            className="h-14 w-14"
+            className="h-40 w-40"
           />
         </div>
         <ul className="  list-none sm:flex hidden justify-end items-center flex-1 gap-5 font-poppins z-[200]">
@@ -78,7 +70,13 @@ export default function Navbar({ setToggle, toggle }: Props) {
           </div>
         </div>
       </motion.div>
-      <ul className={` ${toggle ? " flex flex-col h-[90vh] justify-center items-center align-middle sidebar gap-5" : "hidden"}`}>
+      <ul
+        className={` ${
+          toggle
+            ? " flex flex-col h-[90vh] justify-center items-center align-middle sidebar gap-5"
+            : "hidden"
+        }`}
+      >
         {navLinks.map((item, i) => (
           <li
             key={i}
